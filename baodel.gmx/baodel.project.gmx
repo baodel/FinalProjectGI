@@ -4,10 +4,30 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprite>sprites\sprite0</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <backgrounds name="bsun">
+      <background>background\b_sun1</background>
+      <background>background\b_sun2</background>
+      <background>background\b_sun3</background>
+      <background>background\b_sun4</background>
+      <background>background\b_sun5</background>
+    </backgrounds>
+    <background>background\background5</background>
+    <backgrounds name="da other">
+      <background>background\background8</background>
+    </backgrounds>
+    <background>background\background9</background>
+  </backgrounds>
   <paths name="paths"/>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
