@@ -9,6 +9,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bsun">
@@ -23,10 +24,23 @@
       <background>background\background8</background>
     </backgrounds>
     <background>background\background9</background>
+    <background>background\background10</background>
+    <backgrounds name="group">
+      <background>background\background11</background>
+      <background>background\background12</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="other">
+      <object>objects\trap</object>
+    </objects>
+  </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room5</room>
+    <room>rooms\room1</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
