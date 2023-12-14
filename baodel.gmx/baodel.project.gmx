@@ -8,8 +8,14 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\s_idle</sprite>
+    <sprite>sprites\s_run_right</sprite>
+    <sprite>sprites\s_run_left</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\s_jump</sprite>
+    <sprite>sprites\s_die</sprite>
+    <sprite>sprites\s_ground</sprite>
+    <sprite>sprites\s_attack</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bsun">
@@ -29,12 +35,25 @@
       <background>background\background11</background>
       <background>background\background12</background>
     </backgrounds>
+    <background>background\b_tile_2</background>
+    <background>background\b_backround2</background>
+    <background>background\b_obj_2</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_input.gml</script>
+    <scripts name="main">
+      <script>scripts\scr_run.gml</script>
+      <script>scripts\scr_idle.gml</script>
+      <script>scripts\scr_jump.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="other">
       <object>objects\trap</object>
     </objects>
+    <object>objects\o_main</object>
+    <object>objects\o_ground</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
