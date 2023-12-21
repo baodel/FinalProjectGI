@@ -16,6 +16,16 @@
     <sprite>sprites\s_die</sprite>
     <sprite>sprites\s_ground</sprite>
     <sprite>sprites\s_attack</sprite>
+    <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\s_coin</sprite>
+    <sprite>sprites\s_slope_1</sprite>
+    <sprite>sprites\s_slope_2</sprite>
+    <sprite>sprites\s_slope_3</sprite>
+    <sprite>sprites\s_spole_4</sprite>
+    <sprite>sprites\s_collusion</sprite>
+    <sprite>sprites\s_score</sprite>
+    <sprite>sprites\sprite17</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bsun">
@@ -38,6 +48,7 @@
     <background>background\b_tile_2</background>
     <background>background\b_backround2</background>
     <background>background\b_obj_2</background>
+    <background>background\background14</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -54,8 +65,22 @@
     </objects>
     <object>objects\o_main</object>
     <object>objects\o_ground</object>
+    <object>objects\o_coin</object>
+    <object>objects\o_slope</object>
+    <objects name="slope">
+      <object>objects\o_slope_1</object>
+      <object>objects\o_slope_2</object>
+      <object>objects\o_slope_3</object>
+      <object>objects\o_slope_4</object>
+    </objects>
+    <object>objects\o_collusion</object>
+    <object>objects\o_score</object>
+    <objects name="TEXT">
+      <object>objects\s_gameover</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room4</room>
     <room>rooms\room0</room>
     <room>rooms\room5</room>
     <room>rooms\room1</room>

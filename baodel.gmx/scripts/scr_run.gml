@@ -5,16 +5,16 @@ sprite_index = s_run_right;
 moveX = (pressD - pressA) * spd;
 
 if (pressD + pressA == 0) {
-state = s_idle
+    state = mainStates.idle
 }
 if (pressW) {
-    if (couterJump < counterJumpMax) {
-    moveY = -10;
-    couterJump += 1;
-    state = s_jump;
+    if (counterJump < counterJumpMax) {
+        counterJump += 1;
+        moveY = -10
+        state = mainStates.jump;
     }
 }
 
 if (pressSpace) {
-    state = s_attack;
+    state = mainStates.attack;
 }

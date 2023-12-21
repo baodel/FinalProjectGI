@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>///INIT
 enum mainStates {
-idle,
-attack,
-jump,
-hit,
-run
+    idle,
+    attack,
+    jump,
+    hit,
+    run
 }
 
 state = mainStates.idle;
@@ -40,7 +40,7 @@ spd = 3;
 grav = 1;
 moveX = 0;
 moveY = 0;
-coutermJumpMAX = 2;
+counterJumpMax = 2;
 counterJump = 0;
 
 </string>
@@ -80,16 +80,21 @@ switch (state) {
      scr_jump();
      break;
 }
+var move = pressD - pressA // move will be -1, 0, or 1
+moveX = spd * move;
+
 // PHYSIC
-if (moveY &lt; 10) {
-    moveY = min(moveY + grav, 9);
+// Apply gravity if not on a slope or ground
+if (!place_meeting(x, y + 1, o_ground) &amp;&amp; !place_meeting(x, y + 1, o_slope)) {
+    moveY += grav; // Apply gravity
+    if (moveY &gt; 9) moveY = 9; // Terminal velocity
 }
 // COLLISION
 if (place_meeting(x, y + moveY, o_ground)) {
     while (not place_meeting(x, y + sign(moveY), o_ground)) {
-    y += sign(moveY)
+        y += sign(moveY)
     }
-    
+    counterJump = 0
     moveY = 0
 }
 
@@ -101,16 +106,32 @@ if (place_meeting(x + moveX, y - 2, o_ground)) {
     moveX = 0
 }
 
-if (place_meeting(x +moveX, y -2, o_ground)) {
-    while (not place_meeting(x + sign(moveX), y - 2, o_ground)) {
-    x += sign(moveX)
-    }
-    
-    moveX = 0
+
+// Slope collision
+var on_slope = false;
+if (place_meeting(x + moveX, y, o_slope)) {
+    on_slope = true;
+    moveY = -moveX; // Move up the slope
 }
+
 //APPLY MOVEMENT
 x += moveX;
-y += moveY;
+
+// Apply vertical movement and correct for slope collision
+if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
+    y += moveY;
+} else if (on_slope) {
+    // Correct the vertical position if the player is embedded in the slope
+    while (place_meeting(x, y, o_slope)) {
+        y -= 1; // Move the player up until they are no longer colliding with the slope
+    }
+}
+
+// SPRITE CONTROLLER
+// Update sprite direction based on input
+if (move != 0) {
+    image_xscale = sign(move);
+}
 </string>
           </argument>
         </arguments>
