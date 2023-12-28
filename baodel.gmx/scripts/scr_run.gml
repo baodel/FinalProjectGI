@@ -11,7 +11,7 @@ if (pressW) {
     if (counterJump < counterJumpMax) {
         counterJump += 1;
         moveY = -10
-        state = mainStates.jump;
+        state = mainStates.jump
     }
 }
 

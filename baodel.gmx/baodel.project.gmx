@@ -5,7 +5,11 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\sou_alan_wakke</sound>
+    <sound>sound\sou_random_low_quality</sound>
+    <sound>sound\sou_jump</sound>
+    <sound>sound\sou_bruh_brooo</sound>
+    <sound>sound\sou_titanic</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_idle</sprite>
@@ -26,6 +30,12 @@
     <sprite>sprites\s_collusion</sprite>
     <sprite>sprites\s_score</sprite>
     <sprite>sprites\sprite17</sprite>
+    <sprite>sprites\sprite18</sprite>
+    <sprite>sprites\o_play</sprite>
+    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\s_play</sprite>
+    <sprite>sprites\s_playagain</sprite>
+    <sprite>sprites\sprite23</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bsun">
@@ -49,6 +59,7 @@
     <background>background\b_backround2</background>
     <background>background\b_obj_2</background>
     <background>background\background14</background>
+    <background>background\background15</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -62,6 +73,9 @@
   <objects name="objects">
     <objects name="other">
       <object>objects\trap</object>
+      <object>objects\o_opengame</object>
+      <object>objects\o_wannaplayagain</object>
+      <object>objects\o_nvmayman</object>
     </objects>
     <object>objects\o_main</object>
     <object>objects\o_ground</object>
@@ -77,14 +91,18 @@
     <object>objects\o_score</object>
     <objects name="TEXT">
       <object>objects\s_gameover</object>
+      <object>objects\o_ATTENTION</object>
     </objects>
+    <object>objects\object13</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room4</room>
-    <room>rooms\room0</room>
-    <room>rooms\room5</room>
-    <room>rooms\room1</room>
-    <room>rooms\room3</room>
+    <room>rooms\r_main</room>
+    <room>rooms\r_play1</room>
+    <room>rooms\r_play2</room>
+    <room>rooms\r_play3</room>
+    <room>rooms\r_play4</room>
+    <room>rooms\r_over</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
