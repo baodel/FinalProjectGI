@@ -11,6 +11,14 @@ if (place_meeting(x, y + moveY, o_ground)) {
     counterJump = 0
     state = mainStates.idle
 }
+
+if (pressW) {
+    if (counterJump < counterJumpMax) {
+        counterJump += 1;
+        moveY = -10
+    }
+}
+
 if (pressSpace) {
     state = mainStates.attack
 }

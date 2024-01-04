@@ -9,7 +9,7 @@
     <sound>sound\sou_random_low_quality</sound>
     <sound>sound\sou_jump</sound>
     <sound>sound\sou_bruh_brooo</sound>
-    <sound>sound\sou_titanic</sound>
+    <sound>sound\sou_tianica</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_idle</sprite>
@@ -28,7 +28,7 @@
     <sprite>sprites\s_slope_3</sprite>
     <sprite>sprites\s_spole_4</sprite>
     <sprite>sprites\s_collusion</sprite>
-    <sprite>sprites\s_score</sprite>
+    <sprite>sprites\s_indoor</sprite>
     <sprite>sprites\sprite17</sprite>
     <sprite>sprites\sprite18</sprite>
     <sprite>sprites\o_play</sprite>
@@ -60,6 +60,7 @@
     <background>background\b_obj_2</background>
     <background>background\background14</background>
     <background>background\background15</background>
+    <background>background\b_howtoplay</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -76,6 +77,7 @@
       <object>objects\o_opengame</object>
       <object>objects\o_wannaplayagain</object>
       <object>objects\o_nvmayman</object>
+      <object>objects\object17</object>
     </objects>
     <object>objects\o_main</object>
     <object>objects\o_ground</object>
@@ -83,7 +85,6 @@
     <object>objects\o_slope</object>
     <objects name="slope">
       <object>objects\o_slope_1</object>
-      <object>objects\o_slope_2</object>
       <object>objects\o_slope_3</object>
       <object>objects\o_slope_4</object>
     </objects>
@@ -94,15 +95,16 @@
       <object>objects\o_ATTENTION</object>
     </objects>
     <object>objects\object13</object>
+    <object>objects\o_slope_2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_main</room>
+    <room>rooms\r_HOWTOPLAY</room>
     <room>rooms\r_play1</room>
     <room>rooms\r_play2</room>
     <room>rooms\r_play3</room>
     <room>rooms\r_play4</room>
     <room>rooms\r_over</room>
-    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

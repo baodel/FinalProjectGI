@@ -122,14 +122,13 @@ if (place_meeting(x, y + moveY, o_ground)) {
     moveY = 0
 }
 
-if (place_meeting(x + moveX, y - 2, o_ground)) {
-    while (not place_meeting(x + sign(moveX), y -2, o_ground)) {
-    x += sign(moveX)
+if (place_meeting(x + moveX, y -2, o_ground)) {
+    while (not place_meeting(x + sign(moveX), y -2, o_ground)){
+        x += sign(moveX)
     }
     
     moveX = 0
 }
-
 
 // Slope collision
 var on_slope = false;
@@ -149,6 +148,7 @@ if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
     while (place_meeting(x, y, o_slope)) {
         y -= 1; // Move the player up until they are no longer colliding with the slope
     }
+    counterJump = 0
 }
 
 // SPRITE CONTROLLER
@@ -195,6 +195,27 @@ if (move != 0) {
         <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>score =+ 1;
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
