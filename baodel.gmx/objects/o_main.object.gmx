@@ -157,6 +157,13 @@ if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
 if (move != 0) {
     image_xscale = sign(move);
 }
+// Climb
+if (place_meeting(x, y, o_climb)) {
+    grav = 0;
+    y--;
+} else {
+    grav = 1;
+}
 </string>
           </argument>
         </arguments>
@@ -196,6 +203,36 @@ if (move != 0) {
         <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>703</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>1</kind>
+            <string>Score: </string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

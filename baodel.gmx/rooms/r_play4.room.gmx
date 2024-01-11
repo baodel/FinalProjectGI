@@ -113,7 +113,30 @@
     <instance objName="o_ground" x="-32" y="-32" name="inst_3D33167B" locked="0" code="" scaleX="19" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ground" x="-32" y="288" name="inst_424944DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object17" x="-32" y="0" name="inst_F08F27FA" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="o_main" x="64" y="288" name="inst_75D7854C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_main" x="64" y="224" name="inst_75D7854C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="128" y="256" name="inst_7F813628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="160" y="256" name="inst_81197AB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="192" y="224" name="inst_BE8577C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="224" y="224" name="inst_31708FF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="224" y="192" name="inst_381C404D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="192" y="192" name="inst_C2EF9702" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="256" y="224" name="inst_F3958F01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="288" y="224" name="inst_8DC8D73E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="288" y="192" name="inst_71C907C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="352" y="192" name="inst_115A9651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="416" y="192" name="inst_8C8C0D21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="480" y="192" name="inst_1AADFDC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="448" y="96" name="inst_E0190F4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="352" y="32" name="inst_EAC16BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="288" y="32" name="inst_30631323" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="224" y="96" name="inst_59E27FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="192" y="96" name="inst_D1A10FFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="192" y="64" name="inst_0D863745" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="224" y="64" name="inst_4EF14ACB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="128" y="96" name="inst_C14F081E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="96" y="32" name="inst_FF5597D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="32" y="32" name="inst_57AFD909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_coin" x="0" y="32" name="inst_E3224E07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_tile_2" x="0" y="288" w="32" h="32" xo="32" yo="0" id="10000532" name="inst_35F48403" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
