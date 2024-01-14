@@ -11,3 +11,4 @@ if (pressA or pressD) {
 } else if (pressSpace) {
     state = mainStates.attack;
 }
+

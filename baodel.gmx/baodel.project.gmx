@@ -37,6 +37,12 @@
     <sprite>sprites\s_playagain</sprite>
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\s_arrow</sprite>
+    <sprites name="enemy">
+      <sprite>sprites\s_enemy_walk</sprite>
+      <sprite>sprites\s_enemy_idle</sprite>
+      <sprite>sprites\s_enemy_attack</sprite>
+      <sprite>sprites\s_enemy_hurt</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bsun">
@@ -70,35 +76,40 @@
       <script>scripts\scr_run.gml</script>
       <script>scripts\scr_idle.gml</script>
       <script>scripts\scr_jump.gml</script>
+      <script>scripts\scr_attack.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="enemy">
+      <object>objects\o_enemy</object>
+    </objects>
     <objects name="other">
       <object>objects\trap</object>
-      <object>objects\o_opengame</object>
-      <object>objects\o_wannaplayagain</object>
-      <object>objects\o_nvmayman</object>
+      <object>objects\o_coin</object>
       <object>objects\object17</object>
       <object>objects\o_arrow</object>
+      <object>objects\o_ground</object>
+      <object>objects\o_collusion</object>
+      <object>objects\o_score</object>
+      <object>objects\o_climb</object>
     </objects>
-    <object>objects\o_main</object>
-    <object>objects\o_ground</object>
-    <object>objects\o_coin</object>
-    <object>objects\o_slope</object>
     <objects name="slope">
       <object>objects\o_slope_1</object>
+      <object>objects\o_slope_2</object>
       <object>objects\o_slope_3</object>
       <object>objects\o_slope_4</object>
+      <object>objects\o_slope</object>
     </objects>
-    <object>objects\o_collusion</object>
-    <object>objects\o_score</object>
     <objects name="TEXT">
-      <object>objects\s_gameover</object>
       <object>objects\o_ATTENTION</object>
+      <object>objects\o_nvmayman</object>
+      <object>objects\o_wannaplayagain</object>
+      <object>objects\s_gameover</object>
+      <object>objects\o_opengame</object>
+      <object>objects\object13</object>
     </objects>
-    <object>objects\object13</object>
-    <object>objects\o_slope_2</object>
-    <object>objects\o_climb</object>
+    <object>objects\o_main</object>
+    <object>objects\o_create_hp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_main</room>
