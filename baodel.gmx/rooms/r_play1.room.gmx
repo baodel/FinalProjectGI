@@ -84,7 +84,7 @@
     <instance objName="o_climb" x="192" y="160" name="inst_16B6EB4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_climb" x="192" y="96" name="inst_79AE8548" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_create_hp" x="32" y="32" name="inst_BA0AEA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_enemy" x="404" y="206" name="inst_58C02570" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy" x="481" y="210" name="inst_58C02570" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background5" x="0" y="288" w="32" h="32" xo="160" yo="160" id="10000030" name="inst_6D479FF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

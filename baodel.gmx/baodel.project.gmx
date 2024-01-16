@@ -42,6 +42,7 @@
       <sprite>sprites\s_enemy_idle</sprite>
       <sprite>sprites\s_enemy_attack</sprite>
       <sprite>sprites\s_enemy_hurt</sprite>
+      <sprite>sprites\s_enermy_dealDmg</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -73,8 +74,8 @@
   <scripts name="scripts">
     <script>scripts\scr_input.gml</script>
     <scripts name="main">
-      <script>scripts\scr_run.gml</script>
       <script>scripts\scr_idle.gml</script>
+      <script>scripts\scr_run.gml</script>
       <script>scripts\scr_jump.gml</script>
       <script>scripts\scr_attack.gml</script>
     </scripts>
@@ -82,6 +83,7 @@
   <objects name="objects">
     <objects name="enemy">
       <object>objects\o_enemy</object>
+      <object>objects\o_enermy_dealDmg</object>
     </objects>
     <objects name="other">
       <object>objects\trap</object>
